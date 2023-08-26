@@ -1,0 +1,16 @@
+{
+  "name": "mailer",
+  "version": "1.0.0",
+  "description": "Framework suportar tecnologias de view para desenvolver layout de e-mail de forma mais bonita",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/ejs": "^3.1.2",
+    "ejs": "^3.1.9",
+    "nodemailer": "^6.9.4"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.9",
+    "typescript": "^5.2.2"
+  }
+}
