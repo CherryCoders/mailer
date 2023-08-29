@@ -2,15 +2,27 @@
   "name": "mailer",
   "version": "1.0.0",
   "description": "Framework suportar tecnologias de view para desenvolver layout de e-mail de forma mais bonita",
-  "main": "index.js",
+  "main": "src/index.js",
+  "types": "./repository/index.d.ts",
   "license": "MIT",
+  "scripts": {
+    "test": "npx babel test/index.js --out-file test/app.js && node test/app.js",
+    "test:babel": "node test/app.js"
+  },
   "dependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/preset-react": "^7.22.5",
     "@types/ejs": "^3.1.2",
     "ejs": "^3.1.9",
-    "nodemailer": "^6.9.4"
+    "nodemailer": "^6.9.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
+  "type": "module",
   "devDependencies": {
     "@types/nodemailer": "^6.4.9",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "typescript": "^5.2.2"
   }
 }
