@@ -105,6 +105,8 @@ transport.send({
 Caso seja em react JSX
 
 ```js
+import React from "react";
+
 app.addTemplate("eduardoTemplate", { render: <p>Eduardo melo</p> });
 
 await transport.renderReact("eduardoTemplate");
