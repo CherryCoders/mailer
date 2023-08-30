@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "types": "./repository/index.d.ts",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "test": "npx babel test/index.js --out-file test/app.js && node test/app.js",
     "test:babel": "node test/app.js"
