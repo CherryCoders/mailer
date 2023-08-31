@@ -1,9 +1,9 @@
 {
   "name": "@cherry-code/mailer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Framework suportar tecnologias de view para desenvolver layout de e-mail de forma mais bonita",
   "main": "dist/index.js",
-  "typings": "dist/declarations/index.d.ts",
+  "typings": "dist/declarations/services/index.types.d.ts",
   "license": "MIT",
   "private": false,
   "scripts": {
