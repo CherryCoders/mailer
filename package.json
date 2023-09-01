@@ -1,6 +1,6 @@
 {
   "name": "@cherry-code/mailer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Framework suportar tecnologias de view para desenvolver layout de e-mail de forma mais bonita",
   "main": "dist/index.js",
   "typings": "dist/declarations/index.d.ts",
@@ -22,6 +22,7 @@
   "files": [
     "/dist"
   ],
+  "type": "module",
   "devDependencies": {
     "@types/nodemailer": "^6.4.9",
     "@types/react": "^18.2.21",
