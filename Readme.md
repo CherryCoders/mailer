@@ -66,6 +66,7 @@ a opção transporters é herdada de **[nodemailer](https://nodemailer.com/about
 
   - ### **renderEngineView(name: string, data?: any)** renderizar para ejs
   - ### **renderReact(name: string)** renderizar para react
+  - ## **renderEngineViewString(template: string, data?: any)** compilar uma string ejs para html
 
 ## Exemplos de inicialização:
 
