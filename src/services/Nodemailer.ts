@@ -26,6 +26,13 @@ export class Nodemailer extends Render {
     return this;
   }
 
+  async renderEngineViewString(template: string, data?: any) {
+    const html = super.engiveViewString(template, data);
+    this.html = html;
+
+    return this;
+  }
+
   async send(mailOptions: Mail.Options) {
     if (this.html) mailOptions.html = this.html;
 

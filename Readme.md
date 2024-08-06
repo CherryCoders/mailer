@@ -66,7 +66,7 @@ a opção transporters é herdada de **[nodemailer](https://nodemailer.com/about
 
   - ### **renderEngineView(name: string, data?: any)** renderizar para ejs
   - ### **renderReact(name: string)** renderizar para react
-  - ## **renderEngineViewString(template: string, data?: any)** compilar uma string ejs para html
+  - ### **renderEngineViewString(template: string, data?: any)** compilar uma string ejs para html
 
 ## Exemplos de inicialização:
 
@@ -95,6 +95,9 @@ const transport = app.transporter.getTransport("transportNotify");
 // como escolhi template que renderiza em ejs irei utilizar a função renderEngineView
 await transport.renderEngineView("eduardoTemplate", { value: "Hello World" });
 
+await transport.renderEngiveViewString("<h1>Olá <%= name %>!!!", {
+  name: "Eduardo",
+});
 // após renderizar (é preciso aguardar a renderização você execute o send)
 transport.send({
   from: "<CherryMailer>",
