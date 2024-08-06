@@ -19,6 +19,14 @@ export class Render {
     return render;
   }
 
+  async engiveViewString(template: string, data: any = {}) {
+    const ejs = await import("ejs");
+    //as
+    const render = ejs.render(template, data);
+
+    return render;
+  }
+
   async engineView(templateName: string, data: any = {}) {
     const ejs = await import("ejs");
     const template = this.getTemplate(templateName);
