@@ -27,7 +27,7 @@ export class Nodemailer extends Render {
   }
 
   async renderEngineViewString(template: string, data?: any) {
-    const html = super.engiveViewString(template, data);
+    const html = await super.engiveViewString(template, data);
     this.html = html;
 
     return this;
