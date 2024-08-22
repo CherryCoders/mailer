@@ -21,7 +21,7 @@ export class Render {
 
   async engiveViewString(template: string, data: any = {}) {
     const ejs = await import("ejs");
-    //as
+    // render
     const render = ejs.render(template, data);
 
     return render;
